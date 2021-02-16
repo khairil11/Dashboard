@@ -4,8 +4,6 @@ import Router from 'vue-router';
 import Layout from '@/components/Layout/Layout';
 import Login from '@/pages/Login/Login';
 import ErrorPage from '@/pages/Error/Error';
-// Core
-import TypographyPage from '@/pages/Typography/Typography';
 
 // Tables
 import TablesBasicPage from '@/pages/Tables/Basic';
@@ -15,8 +13,6 @@ import GoogleMapPage from '@/pages/Maps/Google';
 
 // Main
 import AnalyticsPage from '@/pages/Dashboard/Dashboard';
-
-import Test from '@/pages/Test.vue'
 
 // Charts
 import ChartsPage from '@/pages/Charts/Charts';
@@ -51,11 +47,6 @@ export default new Router({
           component: AnalyticsPage,
         },
         {
-          path: 'typography',
-          name: 'TypographyPage',
-          component: TypographyPage,
-        },
-        {
           path: 'components/icons',
           name: 'IconsPage',
           component: IconsPage,
@@ -69,11 +60,6 @@ export default new Router({
           path: 'components/charts',
           name: 'ChartsPage',
           component: ChartsPage,
-        },
-        {
-          path: 'tables',
-          name: 'TablesBasicPage',
-          component: TablesBasicPage,
         },
         {
           path: 'components/maps',
